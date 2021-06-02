@@ -1,0 +1,14 @@
+var data;
+var txt = '$$Exclamation$$ they said $$Adverbs$$ as they jumped into their $$NounsS$$ and flew off with their $$Adjectives$$ $$PluralNouns$$.';
+
+    function setup() {
+        noCanvas();
+        Tabletop.init({
+            key:'15Wyemfu6B!UCzzqeacYnzI8lutrxF6uWvFDiSteBqTs', 
+            callback: gotData,
+            simpleSheet: true
+        });
+
+    var button = createButton('generate madlib');
+    button.mousePressed(generate);
+    }
